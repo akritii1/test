@@ -1,0 +1,32 @@
+<p>stu works!</p>
+<div *ngIf = "flag!=0">
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Avg_Gpa</th>
+        </tr>
+        <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{branch}}</td>
+        <td>{{avg_gpa}}</td>
+    </tr>
+    </table>
+</div>
+<div *ngIf = "flag == 0">
+    <table>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Avg_Gpa</th>
+        <tr *ngFor = "let s of stu">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.branch}}</td>
+            <td>{{s.avg_gpa}}</td>
+        </tr>
+    </table>
+</div>
