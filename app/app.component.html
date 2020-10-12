@@ -1,0 +1,14 @@
+<div class = "topnav">
+  <ul class = "topnav-ul">
+      <li><a routerLink="college">College</a></li>
+      <li><a routerLink="study">Study</a></li>
+      <li><a [routerLink]="['/stu', x]">Student</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+    <!--<form (ngSubmit) = "delUser(f1)" #f1 = "ngForm">
+      <label>ID:</label><br>
+      <input type = "number" [(ngModel)] = "id3" name = "id3" placeholder = "Enter ID to delete"/><br><br>
+      <button type ="submit">Submit</button>
+    </form>-->
+</div>
